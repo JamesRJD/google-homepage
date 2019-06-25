@@ -1,0 +1,115 @@
+/* CSS Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 65vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+li {
+    list-style: none;
+}
+
+/* Class Selectors */
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.nav-left ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    width: 50%;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.nav-right ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.nav-right img {
+    height: 16px;
+}
+
+nav button {
+    background: #4285f4;
+    width: 56px;
+    height: 29px;
+    border-radius: 2px;
+}
+
+main img {
+    width: 272px;
+    margin: 15px;
+}
+
+main input {
+    width: 582px;
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding-left: 25px;
+}
+
+main button {
+    margin: 20px 5px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    height: 36px;
+    width: 127px;
+    text-align: center;
+}
+
+.footer-top {
+    border: 1px solid red;
+}
+
+.footer-bottom {
+    display: flex;
+}
+
+.footer-bottom-left {
+    border: 1px solid red;
+}
+
+.footer-bottom-right {
+    border: 1px solid red;
+}
