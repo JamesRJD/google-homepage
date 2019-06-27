@@ -1,4 +1,4 @@
-/* CSS Reset*/
+/* CSS Reset */
 
 * {
     margin: 0;
@@ -6,110 +6,223 @@
     border: none;
 }
 
+/* Main Selectors */
+
 body {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
-    height: 100px;
-    border: 1px solid blue;
+    justify-content: space-between;
 }
 
 main {
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid red;
-    height: 65vh;
 }
 
 footer {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 li {
     list-style: none;
 }
 
-/* Class Selectors */
+/* Navigation */
+
 
 .nav-left {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    height: 100px;
-    border: 1px solid red;
+    width: 40%;
+    height: 100%;
 }
 
 .nav-left ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    padding: 5px 20px;
+    font-size: 0.8125rem;
+    opacity: 0.75;
+    margin-top: -25px;
+    height: 100%;
+}
+
+.nav-left ul li {
+    padding: 10px;
 }
 
 .nav-right {
     display: flex;
-    width: 50%;
+    width: 40%;
     height: 100px;
-    border: 1px solid red;
 }
 
 .nav-right ul {
     display: flex;
-    justify-content: space-around;
+    height: 100%;
+    align-items: center;
     width: 100%;
-    border: 1px solid red;
+    justify-content: flex-end;
+    padding: 5px 20px;
+    font-size: 0.8125rem;
+    opacity: 0.75;
+    margin-top: -25px;
+}
+
+.nav-right ul li {
+    padding: 10px;
 }
 
 .nav-right img {
     height: 16px;
+    opacity: 0.85;
 }
 
 nav button {
-    background: #4285f4;
-    width: 56px;
+    background: rgb(17, 98, 236);
+    width: auto;
     height: 29px;
+    border: 1px solid rgb(66, 133, 244);
     border-radius: 2px;
+    color: #fff;
+    padding: 0px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 15px;
+    
+}
+
+/* Main Content */
+
+.main-content {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: -300px;
 }
 
 main img {
     width: 272px;
-    margin: 15px;
+    margin: 28px;
 }
 
 main input {
     width: 582px;
     height: 44px;
     border-radius: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(228, 228, 228);
     padding-left: 25px;
+    font-size: 0.9rem;
 }
 
 main button {
-    margin: 20px 5px;
+    margin: 27px 5px;
     background-color: #f8f8f8;
     border-radius: 4px;
     height: 36px;
-    width: 127px;
+    width: auto;
     text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 0.875rem;
+    color: #5F6368;
+    font-family: Arial, Helvetica, sans-serif
 }
 
+/* Footer Navigation */
+
+
 .footer-top {
-    border: 1px solid red;
+    line-height: 40px;
+    padding: 0px 30px;
+    color: rgba(0, 0, 0, 0.54);
+    border: 1px solid #e4e4e4;
+    background-color: #f2f2f2;
+    font-size: 0.9375rem;
 }
 
 .footer-bottom {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #e4e4e4;
+    background-color: #f2f2f2;
+    color: rgb(44, 45, 46);
+    
 }
 
-.footer-bottom-left {
-    border: 1px solid red;
+.footer-bottom-left ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    justify-content: flex-start;
+    padding: 5px 20px;
+    font-size: 0.8125rem;
+    opacity: 0.75;
 }
 
-.footer-bottom-right {
-    border: 1px solid red;
+.footer-bottom-left li {
+    padding: 10px 15px;
 }
+
+.footer-bottom-right ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    justify-content: flex-end;
+    padding: 5px 20px;
+    font-size: 0.8125rem;
+    opacity: 0.75;
+}
+
+.footer-bottom-right ul li {
+    padding: 10px 15px;
+}
+
+/* Psuedo Classes */
+
+nav li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.app-icon:hover {
+    opacity: 1;
+}
+
+.main-buttons button:hover {
+    color: #000;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.google-search:hover {
+    box-shadow: 0 0 1px 1px rgb(219, 219, 219);
+}
+
+.footer-bottom li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
